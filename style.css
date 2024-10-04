@@ -1,0 +1,42 @@
+@import "./reset.css";
+@import "./styles/header.css";
+@import "./styles/menu.css";
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Regular"), url("./fonts/interRegular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter SemiBold"), url("./fonts/interSemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+
+:root {
+  --main-padding: 32px;
+  --card-border-radius: 15px;
+  --header-color: rgba(85, 85, 85, 1);
+}
+
+html {
+  min-width: 1440px;
+}
+
+body {
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+.content {
+  padding-inline: 64px 64px;
+}
+
+
+@media (min-width: 1441px) {
+  .content {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
