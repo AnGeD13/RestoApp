@@ -1,0 +1,25 @@
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 14px;
+  height: 48px;
+  background-color: var(--color-dark);
+}
+
+.bubble__text {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: var(--color-light);
+}
+
+.bubble_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  aspect-ratio: 1;
+  background-color: rgba(57, 57, 57, 1);
+  border-radius: 50%;
+}

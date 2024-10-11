@@ -7,21 +7,32 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="header__wrapper">
-    <div class="content">
-      <header class="header">
-        <a href="/">
-          <img src="./images/icons/logo.svg" alt="logo" class="header__logo">
-        </a>
-        <nav>
-          <ul class="header__menu">
-            <li class="header__menu-item"><a href="/">Меню</a></li>
-            <li class="header__menu-item"><a href="/">Акции</a></li>
-            <li class="header__menu-item"><a href="/">О нас</a></li>
-            <li class="header__menu-item"><a href="/">События</a></li>
-            <li class="header__menu-item"><a href="/">Зоны доставки</a></li>
-          </ul>
-        </nav>
+  <div class="wrapper">
+    <div class="bubble">
+      <p class="bubble__text">Бесплатная доставка от 1 000 ₽</p>
+      <button class="bubble_button" type="button">
+        <img 
+          src="./images/icons/close-bubble.svg" alt="close bubble"
+          width="8" height="8">
+      </button>
+    </div>
+    <header class="header content-inline">
+      <a href="/">
+        <img 
+          src="./images/icons/logo.svg" 
+          alt="logo" class="header__logo"
+          width="137" height="22">
+      </a>
+      <nav>
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="/">Меню</a></li>
+          <li class="header__menu-item"><a href="/">Акции</a></li>
+          <li class="header__menu-item"><a href="/">О нас</a></li>
+          <li class="header__menu-item"><a href="/">События</a></li>
+          <li class="header__menu-item"><a href="/">Зоны доставки</a></li>
+        </ul>
+      </nav>
+      <section class="header__info">
         <address class="header__contacts">
           <a class="header__contacts-tel" href="tel:+01234567890">+0 (123) 456 78-90</a>
           <p class="header__contacts-time">
@@ -30,13 +41,27 @@
             до 
             <time datetime="22:40">22:40</time></p>
         </address>
-      </header>
+        <div class="header__buttons">
+          <button type="button" class="header__button">
+            <img 
+              src="./images/icons/user.svg" 
+              alt="personal account"
+              width="24" height="24">
+          </button>
+          <button type="button" class="header__button header__button_filled">
+            <img 
+              src="./images/icons/basket.svg" 
+              alt="personal basket"
+              width="24" height="24">
+          </button>
+      </section>
+    </header>
     </div>
   </div>
   <main>
     <menu class="menu content">
-      <h1 class="menu__title">Меню</h1>
-      <ul class="menu__list">
+      <h2 class="title">Меню</h2>
+      <ul class="list">
         <li class="menu__item">
           <a href="/" class="menu__item-link">
             <figure class="menu__item-img-wrapper">
@@ -87,6 +112,187 @@
         </li>
       </ul>
     </menu>
+    <section class="new content">
+      <h2 class="title">Новинки</h2>
+      <ul class="list">
+        <li class="dish__item">
+          <a href="/" class="dish__link">
+            <div class="dish__bubble">
+              <img 
+                src="/images/badge/vegetarian.svg" alt="vegetarian"
+                width="36" height="36">
+            </div>
+            <figure>
+              <img 
+                class="dish__img"
+                src="./images/dish/chinese-soup.jpg" alt="chinese egg soup"
+                width="304" height="304">
+                <figcaption>
+                  <h3 class="dish__title">Китайский яичный суп</h3>
+                  <p class="dish__description">
+                    Традиционный китайский суп с яйцом и томатами черри
+                  </p>
+                </figcaption>
+            </figure>
+          </a>
+            <button class="dish__button">350 &#8381;</button>
+        </li>
+        <li class="dish__item">
+          <a href="/" class="dish__link">
+            <div class="dish__bubble">
+              <img 
+                src="/images/badge/vegetarian.svg" alt="vegetarian"
+                width="36" height="36">
+            </div>
+            <figure>
+              <img 
+                class="dish__img"
+                src="./images/dish/paella.jpg" alt="paella"
+                width="304" height="304">
+                <figcaption>
+                  <h3 class="dish__title">Паэлья</h3>
+                  <p class="dish__description">
+                    Традиционное испанское блюдо — рис, колбаски чоризо, куриное бедро, кальмар, кукуруза, горошек, специи
+                  </p>
+                </figcaption>
+            </figure>
+          </a>
+            <button class="dish__button">660 &#8381;</button>
+        </li>
+        <li class="dish__item">
+          <a href="/" class="dish__link">
+            <div class="dish__bubble"></div>
+            <figure>
+              <img 
+                class="dish__img"
+                src="./images/dish/beef.jpg" alt="beef bourguignon"
+                width="304" height="304">
+                <figcaption>
+                  <h3 class="dish__title">Биф Бургеньон</h3>
+                  <p class="dish__description">
+                    Блюдо французской кухни — тушёные кусочки говядины с картофелем и болгарским перцем
+                  </p>
+                </figcaption>
+            </figure>
+          </a>
+            <button class="dish__button">630 &#8381;</button>
+        </li>
+        <li class="dish__item">
+          <a href="/" class="dish__link">
+            <div class="dish__bubble">
+              <img 
+                src="/images/badge/vegetarian.svg" alt="vegetarian"
+                width="36" height="36">
+            </div>
+            <figure>
+              <img 
+                class="dish__img"
+                src="./images/dish/cucumbers.jpg" alt="broken cucumbers"
+                width="304" height="304">
+                <figcaption>
+                  <h3 class="dish__title">Битые огурцы</h3>
+                  <p class="dish__description">
+                    Салат из свежих битых огурцов с уйгурским соусом, кешью и кунжутом
+                  </p>
+                </figcaption>
+            </figure>
+          </a>
+            <button class="dish__button">320 &#8381;</button>
+        </li>
+      </ul>
+    </section>
+    <section class="popular content">
+      <h2 class="title">Популярное</h2>
+      <ul class="list">
+        <li class="dish__item">
+          <a href="/" class="dish__link">
+            <div class="dish__bubble">
+              <img 
+                src="/images/badge/vegetarian.svg" alt="vegetarian"
+                width="36" height="36">
+            </div>
+            <figure>
+              <img 
+                class="dish__img"
+                src="./images/dish/pepperoni.jpg" alt="pepperoni"
+                width="304" height="304">
+                <figcaption>
+                  <h3 class="dish__title">Пепперони</h3>
+                  <p class="dish__description">
+                    Просто и вкусно - томатная основа маринара, колбаски пепперони и сыр моцарелла
+                  </p>
+                </figcaption>
+            </figure>
+          </a>
+            <button class="dish__button">660 &#8381;</button>
+        </li>
+        <li class="dish__item">
+          <a href="/" class="dish__link">
+            <div class="dish__bubble">
+              <img 
+                src="/images/badge/vegetarian.svg" alt="vegetarian"
+                width="36" height="36">
+            </div>
+            <figure>
+              <img 
+                class="dish__img"
+                src="./images/dish/p-g_pizza.jpg" alt="pizza pear gorgonzola"
+                width="304" height="304">
+                <figcaption>
+                  <h3 class="dish__title">Груша Горгонзола</h3>
+                  <p class="dish__description">
+                    Нежная пицца на основе сливочного соуса с сыром горгондзола, грушей, медом и кедровыми орехами
+                  </p>
+                </figcaption>
+            </figure>
+          </a>
+            <button class="dish__button">780 &#8381;</button>
+        </li>
+        <li class="dish__item">
+          <a href="/" class="dish__link">
+            <div class="dish__bubble"></div>
+            <figure>
+              <img 
+                class="dish__img"
+                src="./images/cardMenuSoup.jpg" alt="fo bo"
+                width="304" height="304">
+                <figcaption>
+                  <h3 class="dish__title">Фо Бо</h3>
+                  <p class="dish__description">
+                    Вьетнамский суп с рисовой лапшой, в котором используется говядина, свежая зелень и ростки сои. Подают с добавками, такими как мята, долька лайма, острый соус шрирача, азиатский уксус и лаоганма
+                  </p>
+                </figcaption>
+            </figure>
+          </a>
+            <button class="dish__button">490 &#8381;</button>
+        </li>
+        <li class="dish__item">
+          <a href="/" class="dish__link">
+            <div class="dish__bubble">
+              <img 
+                src="/images/badge/sharp.svg" alt="sharp"
+                width="36" height="36">
+                <img 
+                  src="/images/badge/seafood.svg" alt="seafood"
+                  width="36" height="36">
+            </div>
+            <figure>
+              <img 
+                class="dish__img"
+                src="./images/dish/tom-yam.jpg" alt="tom yam with seafood"
+                width="304" height="304">
+                <figcaption>
+                  <h3 class="dish__title">Том Ям с морепродуктами</h3>
+                  <p class="dish__description">
+                    Просто и вкусно - томатная основа маринара, колбаски пепперони и сыр моцарелла
+                  </p>
+                </figcaption>
+            </figure>
+          </a>
+            <button class="dish__button">590 &#8381;</button>
+        </li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>

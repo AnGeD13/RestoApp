@@ -1,0 +1,52 @@
+.dish__item {
+  position: relative;
+  width: 304px;
+  height: 468px;
+}
+
+.dish__bubble {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  column-gap: 8px;
+}
+
+.dish__img {
+  border-radius: 16px;
+  margin-bottom: 14px;
+}
+
+.dish__title {
+  color: var(--color-dark);
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.dish__description {
+  color: var(--color-grey);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.dish__button {
+  width: 100%;
+  height: 56px;
+  border-radius: 16px;
+  background-color: var(--dish-button-color);
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
