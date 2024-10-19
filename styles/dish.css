@@ -31,6 +31,7 @@
 
 .dish__description {
   color: var(--color-grey);
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 16px;

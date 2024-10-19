@@ -35,6 +35,10 @@ body {
   font-weight: 600;
 }
 
+button:not(:disabled) {
+  cursor: pointer;
+}
+
 .content-inline {
   padding-inline: 64px 64px;
 }
