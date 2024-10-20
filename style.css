@@ -3,6 +3,9 @@
 @import "./styles/header.css";
 @import "./styles/menu.css";
 @import "./styles/dish.css";
+@import "./styles/card.css";
+@import "./styles/events.css";
+
 
 @font-face {
   font-family: "Inter";
