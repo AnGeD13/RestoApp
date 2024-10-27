@@ -1,5 +1,8 @@
 .card__item {
   color: rgba(255, 255, 255, 1);
+  width: 640px;
+  height: 360px;
+  position: relative;
 }
 
 .card__link {
@@ -7,19 +10,25 @@
 }
 
 .card__link:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 640px;
   height: 360px;
   border-radius: var(--card-border-radius);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
 }
 
 .card__image {
   border-radius: var(--card-border-radius);
   object-fit: cover;
+  width: 640px;
+  height: 360px;
 }
 
 .card__title {
@@ -43,7 +52,8 @@
   line-height: 20px;
 }
 
-.card__bubble-left, .card__bubble-right {
+.card__bubble-left,
+.card__bubble-right {
   display: flex;
   column-gap: 8px;
 }
@@ -60,5 +70,5 @@
 }
 
 .card__bubble-info_end {
-background-color: var(--color-grey);
+  background-color: var(--color-grey);
 }

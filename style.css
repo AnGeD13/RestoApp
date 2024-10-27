@@ -1,4 +1,5 @@
-@import "./reset.css";
+@import "./styles/reset.css";
+@import "./styles/fonts.css";
 @import "./styles/bubble.css";
 @import "./styles/header.css";
 @import "./styles/menu.css";
@@ -6,18 +7,6 @@
 @import "./styles/card.css";
 @import "./styles/events.css";
 
-
-@font-face {
-  font-family: "Inter";
-  src: local("Inter Regular"), url("./fonts/interRegular.woff2") format("woff2");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: local("Inter SemiBold"), url("./fonts/interSemiBold.woff2") format("woff2");
-  font-weight: 600;
-}
 
 :root {
   --main-padding: 32px;
@@ -61,6 +50,31 @@ button:not(:disabled) {
 .list {
   display: flex;
   column-gap: 32px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.gastronomy:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 360px;
+  background: #0000001A;
+  z-index: 1;
+  border-radius: var(--card-border-radius);
 }
 
 
