@@ -6,6 +6,7 @@
 @import "./styles/dish.css";
 @import "./styles/card.css";
 @import "./styles/events.css";
+@import "./styles/footer.css";
 
 
 :root {
@@ -32,12 +33,12 @@ button:not(:disabled) {
 }
 
 .content-inline {
-  padding-inline: 64px 64px;
+  padding-inline: 64px;
 }
 
 .content {
-  padding-block: var(--main-padding) var(--main-padding);
-  padding-inline: 64px 64px;
+  padding-block: var(--main-padding);
+  padding-inline: 64px;
 }
 
 .title {
