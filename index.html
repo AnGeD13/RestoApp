@@ -8,10 +8,10 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <div class="header__wrapper">
+    <div class="header-wrapper">
       <div class="bubble">
         <p class="bubble__text">Бесплатная доставка от 1 000 ₽</p>
-        <button class="bubble_button js-close-bubble" type="button">
+        <button class="bubble__button js-close-bubble" type="button">
           <img
             src="./images/icons/close-bubble.svg"
             alt="close bubble"
@@ -21,7 +21,6 @@
         </button>
       </div>
       <header class="header content-inline">
-        <h1 class="visually-hidden">Resto App</h1>
         <a href="/">
           <img
             src="./images/icons/logo-header.svg"
@@ -53,13 +52,10 @@
             </p>
           </address>
           <div class="header__buttons">
-            <button type="button" class="header__button">
-              <img
-                src="./images/icons/user.svg"
-                alt="personal account"
-                width="24"
-                height="24"
-              />
+            <button type="button" class="header__button header__button_user">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.84999C10.2603 3.84999 8.85002 5.2603 8.85002 6.99999C8.85002 8.73969 10.2603 10.15 12 10.15C13.7397 10.15 15.15 8.73969 15.15 6.99999C15.15 5.2603 13.7397 3.84999 12 3.84999ZM7.15002 6.99999C7.15002 4.32141 9.32144 2.14999 12 2.14999C14.6786 2.14999 16.85 4.32141 16.85 6.99999C16.85 9.67858 14.6786 11.85 12 11.85C9.32144 11.85 7.15002 9.67858 7.15002 6.99999ZM7.43041 15.7854C6.25402 16.3736 5.85002 17.0289 5.85002 17.5C5.85002 17.9711 6.25402 18.6264 7.43041 19.2146C8.55596 19.7774 10.1704 20.15 12 20.15C13.8297 20.15 15.4441 19.7774 16.5696 19.2146C17.746 18.6264 18.15 17.9711 18.15 17.5C18.15 17.0289 17.746 16.3736 16.5696 15.7854C15.4441 15.2226 13.8297 14.85 12 14.85C10.1704 14.85 8.55596 15.2226 7.43041 15.7854ZM6.67015 14.2649C8.0781 13.5609 9.96368 13.15 12 13.15C14.0364 13.15 15.922 13.5609 17.3299 14.2649C18.687 14.9434 19.85 16.0381 19.85 17.5C19.85 18.9619 18.687 20.0566 17.3299 20.7351C15.922 21.4391 14.0364 21.85 12 21.85C9.96368 21.85 8.0781 21.4391 6.67015 20.7351C5.31304 20.0566 4.15002 18.9619 4.15002 17.5C4.15002 16.0381 5.31304 14.9434 6.67015 14.2649Z"/>
+                </svg>                
             </button>
             <button type="button" class="header__button header__button_filled">
               <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -73,6 +69,7 @@
       </header>
     </div>
     <main>
+      <h1 class="visually-hidden">Resto App</h1>
       <section class="menu content">
         <h2 class="title">Меню</h2>
         <ul class="list">
@@ -129,7 +126,7 @@
       <section class="content">
         <h2 class="title">Новинки</h2>
         <ul class="list">
-          <li class="dish__item">
+          <li class="dish">
             <a href="/" class="dish__link">
               <div class="dish__bubble">
                 <img src="./images/badge/vegetarian.svg" alt="vegetarian" />
@@ -150,7 +147,7 @@
             </a>
             <button class="dish__button">350 &#8381;</button>
           </li>
-          <li class="dish__item">
+          <li class="dish">
             <a href="/" class="dish__link">
               <div class="dish__bubble">
                 <img src="./images/badge/vegetarian.svg" alt="vegetarian" />
@@ -172,7 +169,7 @@
             </a>
             <button class="dish__button">660 &#8381;</button>
           </li>
-          <li class="dish__item">
+          <li class="dish">
             <a href="/" class="dish__link">
               <figure>
                 <img
@@ -191,7 +188,7 @@
             </a>
             <button class="dish__button">630 &#8381;</button>
           </li>
-          <li class="dish__item">
+          <li class="dish">
             <a href="/" class="dish__link">
               <div class="dish__bubble">
                 <img src="./images/badge/vegetarian.svg" alt="vegetarian" />
@@ -218,7 +215,7 @@
       <section class="content">
         <h2 class="title">Популярное</h2>
         <ul class="list">
-          <li class="dish__item">
+          <li class="dish">
             <a href="/" class="dish__link">
               <figure>
                 <img
@@ -237,7 +234,7 @@
             </a>
             <button class="dish__button">660 &#8381;</button>
           </li>
-          <li class="dish__item">
+          <li class="dish">
             <a href="/" class="dish__link">
               <div class="dish__bubble">
                 <img src="./images/badge/vegetarian.svg" alt="vegetarian" />
@@ -259,7 +256,7 @@
             </a>
             <button class="dish__button">780 &#8381;</button>
           </li>
-          <li class="dish__item">
+          <li class="dish">
             <a href="/" class="dish__link">
               <figure>
                 <img
@@ -280,7 +277,7 @@
             </a>
             <button class="dish__button">490 &#8381;</button>
           </li>
-          <li class="dish__item">
+          <li class="dish">
             <a href="/" class="dish__link">
               <div class="dish__bubble">
                 <img src="./images/badge/sharp.svg" alt="sharp" />
@@ -308,7 +305,7 @@
       <section class="content">
         <h2 class="title">Акции</h2>
         <ul class="list">
-          <li class="card__item">
+          <li class="card">
             <a href="/" class="card__link">
               <div class="card__bubble">
                 <ul class="card__bubble-left">
@@ -329,7 +326,7 @@
               </figure>
             </a>
           </li>
-          <li class="card__item">
+          <li class="card">
             <a href="/" class="card__link">
               <div class="card__bubble">
                 <ul class="card__bubble-left">
@@ -355,7 +352,7 @@
       <section class="content">
         <h2 class="title">События</h2>
         <ul class="list">
-          <li class="card__item">
+          <li class="card">
             <a href="/" class="card__link">
               <div class="card__bubble">
                 <ul class="card__bubble-left">
@@ -380,7 +377,7 @@
               </figure>
             </a>
           </li>
-          <li class="card__item">
+          <li class="card">
             <a href="/" class="card__link">
               <div class="card__bubble">
                 <ul class="card__bubble-left">
@@ -411,7 +408,7 @@
       <section class="content">
         <h2 class="title">Наши заведения</h2>
         <ul class="list">
-          <li class="card__item">
+          <li class="card">
             <a href="/" class="card__link">
               <div class="card__bubble">
                 <ul class="card__bubble-left">
@@ -436,7 +433,7 @@
               </figure>
             </a>
           </li>
-          <li class="gastronomy card__item">
+          <li class="gastronomy card">
             <a href="/" class="card__link">
               <div class="card__bubble">
                 <ul class="card__bubble-left">
@@ -464,7 +461,7 @@
         </ul>
       </section>
     </main>
-    <div class="footer__wrapper">
+    <div class="footer-wrapper">
       <footer class="footer content">
         <section class="footer__info">
           <address class="footer__contacts">
@@ -639,14 +636,14 @@
           </ul>
         </section>
         <div class="line"></div>
-        <footer class="footer__footer">
+        <div class="footer__footer">
           <p>
             Проект выполнен в рамках стажировки
             <a href="https://preax.ru" target="_blank" class="preax-link"
               >PREAX</a
             >
           </p>
-        </footer>
+        </div>
       </footer>
     </div>
   </body>

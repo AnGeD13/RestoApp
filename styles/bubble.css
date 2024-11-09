@@ -14,7 +14,7 @@
   color: var(--color-light);
 }
 
-.bubble_button {
+.bubble__button {
   display: flex;
   justify-content: center;
   align-items: center;

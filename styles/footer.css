@@ -1,4 +1,4 @@
-.footer__wrapper {
+.footer-wrapper {
   background-color: var(--color-dark);
 }
 
@@ -34,6 +34,7 @@
   line-height: 32px;
   letter-spacing: 0.4px;
   color: var(--footer-light-color);
+  transition: 0.2s;
 }
 
 .footer__contacts-time {
@@ -58,10 +59,6 @@
   border-radius: 8px;
   color: var(--footer-dark-color);
   background-color: var(--footer-grey-color);
-}
-
-.social__item:hover {
-  color: var(--footer-light-color);
   transition: 0.2s;
 }
 
@@ -79,8 +76,7 @@
   color: var(--footer-light-color);
 }
 
-.footer__menu-item:hover {
-  color: var(--footer-dark-color);
+.footer__menu-item {
   transition: 0.2s;
 }
 
@@ -94,11 +90,6 @@
   height: 40px;
   fill-opacity: 0.5;
   color: var(--footer-dark-color);
-}
-
-.stores__item:hover {
-  color: var(--footer-light-color);
-  fill-opacity: 1;
   transition: 0.2s;
 }
 
@@ -118,8 +109,7 @@
   letter-spacing: 0.1px;
 }
 
-.footer__docs-link:hover {
-  color: var(--footer-light-color);
+.footer__docs-link {
   transition: 0.2s;
 }
 
@@ -158,9 +148,18 @@
 
 .preax-link {
   border-bottom: 1px solid currentColor;
+  transition: 0.2s;
 }
 
-.preax-link:hover {
+.preax-link:hover, .social__item:hover, .footer__docs-link:hover {
   color: var(--footer-light-color);
-  transition: 0.2s;
+}
+
+.footer__contacts-tel:hover, .footer__menu-item:hover {
+  color: var(--footer-dark-color);
+}
+
+.stores__item:hover {
+  color: var(--footer-light-color);
+  fill-opacity: 1;
 }
