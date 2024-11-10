@@ -1,0 +1,87 @@
+@import "./styles/reset.css";
+@import "./styles/fonts.css";
+@import "./styles/bubble.css";
+@import "./styles/header.css";
+@import "./styles/menu.css";
+@import "./styles/dish.css";
+@import "./styles/card.css";
+@import "./styles/events.css";
+@import "./styles/footer.css";
+
+
+:root {
+  --main-padding: 32px;
+  --card-border-radius: 15px;
+  --header-color: rgba(85, 85, 85, 1);
+  --color-dark: rgba(28, 28, 28, 1);
+  --color-light: rgba(255, 255, 255, 1);
+  --dish-button-color: rgba(244, 244, 244, 1);
+  --color-grey: rgba(114, 114, 114, 1);
+}
+
+html {
+  min-width: 1440px;
+}
+
+body {
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+.content-inline {
+  padding-inline: 64px;
+}
+
+.content {
+  padding-block: var(--main-padding);
+  padding-inline: 64px;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 48px;
+  color: rgba(28, 28, 28, 1);
+  padding-bottom: var(--main-padding);
+}
+
+.list {
+  display: flex;
+  column-gap: 32px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.gastronomy:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 360px;
+  background: #0000001A;
+  z-index: 1;
+  border-radius: var(--card-border-radius);
+}
+
+
+@media (min-width: 1441px) {
+  .content, .content-inline {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}

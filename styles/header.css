@@ -1,0 +1,85 @@
+.header-wrapper {
+  background: linear-gradient(90deg, #FEDD2C 0%, #F9C201 100%);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  column-gap: 181px;
+  padding-block: 16px;
+  color: var(--header-color);
+}
+
+.header__menu {
+  display: flex;
+  width: 433px;
+  column-gap: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.header__menu-item {
+  transition: 0.2s;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+  column-gap: 64px;
+}
+
+.header__contacts {
+  text-align: end;
+}
+
+.header__contacts-tel {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  transition: 0.2s;
+}
+
+.header__contacts-time {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09px;
+}
+
+.header__buttons {
+  display: flex;
+  column-gap: 16px;
+}
+
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 48px;
+  background-color: transparent;
+  border: 2px solid var(--color-dark);
+  border-radius: 16px;
+  transition: 0.2s;
+}
+
+.header__button_filled {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.header__button_filled:hover {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  border-color: var(--color-light); 
+}
+
+.header__button_user:hover {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+.header__menu-item:hover, .header__contacts-tel:hover {
+  color: var(--color-dark);
+}

@@ -1,0 +1,29 @@
+.menu__item-link {
+  position: relative;
+}
+
+.menu__item-link:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 304px;
+  height: 304px;
+  border-radius: var(--card-border-radius);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.menu__item-img {
+  border-radius: var(--card-border-radius);
+  width: 304px;
+  height: 304px;
+}
+
+.menu__item-title {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-light);
+}
