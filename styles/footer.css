@@ -34,7 +34,7 @@
   line-height: 32px;
   letter-spacing: 0.4px;
   color: var(--footer-light-color);
-  transition: 0.2s;
+  transition-duration: var(--transition-duration);
 }
 
 .footer__contacts-time {
@@ -59,7 +59,7 @@
   border-radius: 8px;
   color: var(--footer-dark-color);
   background-color: var(--footer-grey-color);
-  transition: 0.2s;
+  transition-duration: var(--transition-duration);
 }
 
 .footer__nav {
@@ -77,7 +77,7 @@
 }
 
 .footer__menu-item {
-  transition: 0.2s;
+  transition-duration: var(--transition-duration);
 }
 
 .stores {
@@ -90,8 +90,9 @@
   height: 40px;
   fill-opacity: 0.5;
   color: var(--footer-dark-color);
-  transition: 0.2s;
+  transition-duration: var(--transition-duration);
 }
+
 
 .footer__copyright {
   display: flex;
@@ -110,7 +111,7 @@
 }
 
 .footer__docs-link {
-  transition: 0.2s;
+  transition-duration: var(--transition-duration);
 }
 
 .footer__payment {
@@ -130,6 +131,7 @@
 
 .footer__payment-item a {
   cursor: default;
+  pointer-events: none;
 }
 
 .line {
@@ -148,7 +150,7 @@
 
 .preax-link {
   border-bottom: 1px solid currentColor;
-  transition: 0.2s;
+  transition-duration: var(--transition-duration);
 }
 
 .preax-link:hover, .social__item:hover, .footer__docs-link:hover {

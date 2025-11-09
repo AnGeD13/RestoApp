@@ -20,7 +20,7 @@
 }
 
 .header__menu-item {
-  transition: 0.2s;
+  transition-duration: var(--transition-duration);
 }
 
 .header__info {
@@ -37,7 +37,7 @@
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.3px;
-  transition: 0.2s;
+  transition-duration: var(--transition-duration);
 }
 
 .header__contacts-time {
@@ -61,7 +61,7 @@
   background-color: transparent;
   border: 2px solid var(--color-dark);
   border-radius: 16px;
-  transition: 0.2s;
+  transition-duration: var(--transition-duration);
 }
 
 .header__button_filled {

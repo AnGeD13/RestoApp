@@ -5,7 +5,3 @@ const paymentItem = document.querySelectorAll(".footer__payment-item");
 bubbleBtn.addEventListener("click", function () {
   bubbleBlock.style.display = "none";
 });
-
-function preventLink(ev) {
-  ev.preventDefault();
-}
